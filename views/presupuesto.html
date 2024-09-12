@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameworld</title>
+    <link rel="stylesheet" href="../css/presupuesto.css">
+    <link rel="icon" href="../imgs/Icono.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <!--Zona de la barra de navegación-->
+        <nav>
+            <h1>GAMEWORLD</h1>
+            <div class="links-list">
+                <!--Links a distintas partes de la web-->
+                <a href="../index.html">Inicio</a>
+                <a href="../views/presupuesto.html">Presupuesto</a>
+                <a href="../views/galeria.html">Galeria</a>
+                <a href="../views/contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <form>
+        <h2>
+        Formulario de contacto
+        </h2>
+
+        <fieldset>
+            <!--Primera parte del formulario-->    
+            <legend>DATOS DE CONTACTO</legend>
+            <div class="form_input">
+                <label>Nombre
+                    <input type="text" placeholder="Francisco" required maxlength="15">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Apellido
+                    <input type="text" placeholder="Gonzalez" required maxlength="40">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Numero de telefono
+                    <input type="text" placeholder="123456789" required max="9">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Email
+                    <input type="email" placeholder="ejemplo@gmail.com" required>
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>  
+            <!--Segunda parte del formulario-->  
+            <legend>PRESUPUESTO</legend>
+            <div class="form_input">
+                <label>Elige un producto:
+                    <input list="referente" name="referente" required>
+                    <datalist id="referente">
+                        <option value="Nintendo Switch">300$</option>
+                        <option value="Wii U">200$</option>
+                        <option value="Mega Drive">75$</option>
+                        <option value="Super Nintendo">400$</option>
+                    </datalist>
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Plazo de entrega
+                    <input type="number" required>
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Marque todas las opciones extra que prefiera:</label>
+                <div class="checkbox_box">
+                    Envolver para regalo
+                    <input type="checkbox" class="checkbox">
+                    Edición coleccionista
+                    <input type="checkbox" class="checkbox">
+                    Ticket regalo
+                    <input type="checkbox" class="checkbox">
+                    Envio certificado
+                    <input type="checkbox" class="checkbox">
+                </div>
+            </div>
+
+            <div class="form_input">
+                <label>Presupuesto final:
+                    <input type="number" readonly>
+                </label>
+            </div>
+            <!--Zona de envio de formulario-->
+            <div class="form_input">
+                <label>Acepto los terminos y condiciones
+                    <input type="checkbox" class="checkbox" required>
+                </label>
+            </div>
+    
+            <div class="form_input_button">
+                <input type="button" name="envío" value="Enviar" onClick="validar(this.form);" class="form_button"/>
+
+            </div>
+        
+        </fieldset>
+    
+    </form>
+    <!--Zona del pie de pagina-->
+    <footer>
+        <p>
+            Copyright - Todos los derechos reservados 2024 <br>
+            Av. de Navarra, 93, Delicias, 50017 Zaragoza
+        </p>
+        <div>
+            <a href="https://www.facebook.com" class="logo_link"><img src="../imgs/124010.png" class="logo" alt="facebook"></a>
+            <a href="https://www.twitter.com" class="logo_link"><img src="../imgs/twitter.png" class="logo" alt="twitter"></a>
+            <a href="https://www.instagram.com" class="logo_link"><img src="../imgs/instalogo.png" class="logo" alt="instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
